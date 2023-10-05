@@ -1,6 +1,6 @@
 <template>
     <div id="newTodo" class="bg-white dark:bg-blue-800 px-5 py-4 md:px-6 md:py-[17px] rounded-lg shadow-custom dark:shadow-custom-dark flex items-center gap-3 md:gap-5">
-        <div class="h-5 w-5 md:h-6 md:w-6 p-[1px] rounded-full bg-grayish-blue-50 dark:bg-grayish-blue-950"> 
+        <div class="flex-shrink-0 h-5 w-5 md:h-6 md:w-6 p-[1px] rounded-full bg-grayish-blue-50 dark:bg-grayish-blue-950"> 
             <div class="h-full w-full rounded-full flex justify-center items-center bg-white dark:bg-blue-800">
             </div>
         </div>

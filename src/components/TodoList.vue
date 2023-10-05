@@ -2,7 +2,7 @@
     <draggable v-model="todosStore.todos" item-key="id">
         <template #item="{ element, index }">
             <div v-show="todosStore.filter == 'All' || (todosStore.filter == 'Active' && !element.isCompleted) || (todosStore.filter == 'Completed' && element.isCompleted)"
-                class="todo px-5 py-4 md:px-6 md:py-[1px] border-b-[1px] border-grayish-blue-200 dark:border-grayish-blue-900 flex items-center gap-3 md:gap-5 group">
+                class="todo px-5 py-4 md:px-6 md:py-[17px] border-b-[1px] border-grayish-blue-200 dark:border-grayish-blue-900 flex items-center gap-3 md:gap-5 group">
                 <label class="flex-grow flex items-center cursor-pointer gap-3 md:gap-5 group">
                     <!-- Todo Completion Toggle Button -->
                     <div class="h-5 w-5 md:h-6 md:w-6 p-[1px] rounded-full transition-custom"

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .text-normal {
+        @apply text-xs md:text-lg;
+    }
+    .text-small {
+        @apply text-xs md:text-sm;
+    }
+    .text-filter {
+        @apply text-sm;
+    }
+    .transition-custom {
+        @apply transition-all duration-300;
+    }
+    @media (hover: hover) {
+        .hide-for-hover-only {
+          @apply opacity-0;
+        }
+    }
+}

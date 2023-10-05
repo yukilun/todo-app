@@ -6,7 +6,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, watch } from 'vue';
+import { ref, onMounted } from 'vue';
 import IconSun from './icons/IconSun.vue';
 import IconMoon from './icons/IconMoon.vue';
 
@@ -14,7 +14,7 @@ const theme = ref('light');
 
 onMounted(() => {
     const preferTheme = localStorage.getItem('prefer-theme');
-    if((preferTheme && preferTheme == 'dark') || window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if((preferTheme && preferTheme == 'dark') || (!preferTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark');
         theme.value = 'dark';
     }

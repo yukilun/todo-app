@@ -5,21 +5,21 @@
                 class="todo px-5 py-4 md:px-6 md:py-[17px] border-b-[1px] border-grayish-blue-200 dark:border-grayish-blue-900 flex items-center gap-3 md:gap-5 group">
                 <label class="flex-grow overflow-hidden flex items-center cursor-pointer gap-3 md:gap-5 group">
                     <!-- Todo Completion Toggle Button -->
-                    <div class="h-5 w-5 md:h-6 md:w-6 p-[1px] rounded-full transition-custom"
+                    <span class="block flex-shrink-0 h-5 w-5 md:h-6 md:w-6 p-[1px] rounded-full transition-custom"
                         :class="element.isCompleted ? 'bg-gradient-to-br from-sky-blue to-orchid'
                             : 'bg-grayish-blue-50 dark:bg-grayish-blue-950 group-hover:bg-gradient-to-br group-hover:from-sky-blue group-hover:to-orchid'">
 
-                        <div class="h-full w-full rounded-full flex justify-center items-center"
+                        <span class="h-full w-full rounded-full flex justify-center items-center"
                             :class="element.isCompleted ? 'bg-gradient-to-br from-sky-blue to-orchid' : 'bg-white dark:bg-blue-800'">
                             <IconCheck v-if="element.isCompleted" />
-                        </div>
+                        </span>
                         <input type="checkbox" v-model="element.isCompleted" class="hidden">
-                    </div>
+                    </span>
                     <!-- Todo Task -->
-                    <p class="flex-grow text-normal whitespace-nowrap text-ellipsis overflow-hidden"
+                    <span class="flex-grow text-normal whitespace-nowrap text-ellipsis overflow-hidden"
                         :class="element.isCompleted ? 'line-through text-grayish-blue-200 dark:text-grayish-blue-900' : 'text-grayish-blue-800 dark:text-grayish-blue-300'">
                         {{ element.task }}
-                    </p>
+                    </span>
                 </label>
                 <!-- Todo Removal Button -->
                 <button type="button" :aria-label="`remove todo: ${element.task}`"

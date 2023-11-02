@@ -4,7 +4,7 @@
             :class="todosStore.filter == option ? 'text-blue-500' : 
                 'cursor-pointer text-grayish-blue-600 dark:text-grayish-blue-900 hover:text-grayish-blue-800 dark:hover:text-grayish-blue-100'">
             <span>{{option}}</span>
-            <input type="radio" v-model="todosStore.filter" :value="option" class="h-0 w-0" />
+            <input type="radio" v-model="todosStore.filter" :value="option" class="h-0 w-0 absolute left-0 opacity-0" />
         </label>
     </div>
 </template>

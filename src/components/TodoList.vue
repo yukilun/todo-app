@@ -15,7 +15,7 @@
                                 :class="element.isCompleted ? 'bg-gradient-to-br from-sky-blue to-orchid' : 'bg-white dark:bg-blue-800'">
                                 <IconCheck v-if="element.isCompleted" />
                             </span>
-                            <input type="checkbox" v-model="element.isCompleted" class="h-0 w-0 absolute -left-100vw">
+                            <input type="checkbox" v-model="element.isCompleted" class="h-0 w-0 absolute left-0 opacity-0">
                         </label>
                     </div>
                     <!-- Todo Task -->

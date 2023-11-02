@@ -17,6 +17,9 @@
     .transition-custom {
         @apply transition-all duration-300;
     }
+    .outline-auto {
+        outline: auto;
+    }
     @media (hover: hover) {
         .hide-for-hover-only {
           @apply opacity-0;
